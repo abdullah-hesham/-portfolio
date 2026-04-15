@@ -58,6 +58,12 @@ body{
     background: #e6e6e6;
 }
 
+.button-container {
+    justify-content:left;
+    gap: 100px;
+    margin-left: 100px;
+}
+
 .buttons {
     display: inline-block;
     margin-left: 0px;
@@ -72,14 +78,6 @@ body{
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-#button1{
-    margin-left:100px;
-}
-
-#button2{
-    margin-left: 5px;
 }
 
 #text1, #text2{
@@ -227,9 +225,7 @@ footer{
     border-radius: 10px;
     border: 1px solid #ccc;
 }
-#button3{
-    margin-left: 100px;
-}
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -289,27 +285,13 @@ footer{
         text-align:center;
         padding-left: 0px;
     }
-    
+
     .buttons {
-    display: inline-block;
-
-    margin-left: 0px;
-    margin-top: 20px;
-
-    border-radius: 20px;
-    font-size: 1em;
-    padding: 15px 25px;
-
-    background: white;
-    color: black;
-    font-weight: bold;
-
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-
-    transition: 0.3s ease;
+        text-align: center;
+        transition: 0.3s ease;
     }
+    
+    
     .features{
         flex-direction: column;
         align-items: center;
@@ -329,28 +311,37 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    .button-container {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    #button1 , #button2{
-        margin-left:35px;
 
-    }
+    .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 0;
+}
+
     #button3 {
-        margin-left: 135px;
+    margin-left: 0;
+    display: inline-block;
+}
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .form-container{
         width:300px;
     }
-    
-.contactform input,
-.contactform textarea {
-    display: block;
-    width: 250px;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
+    .contactform input,
+    .contactform textarea {
+        display: block;
+        width: 250px;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
 }
