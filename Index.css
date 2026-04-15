@@ -257,7 +257,7 @@ footer{
 
 .form-container {
     background: #ffeea2;
-    width: 350px;
+    width: 300px;
     margin: 40px auto;
     border-radius: 20px;
 }
@@ -340,4 +340,17 @@ footer{
     #button3 {
         margin-left: 135px;
     }
+    .form-container{
+        width:300px;
+    }
+    
+.contactform input,
+.contactform textarea {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
 }
